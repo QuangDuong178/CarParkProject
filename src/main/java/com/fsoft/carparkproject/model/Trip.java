@@ -17,8 +17,5 @@ public class Trip {
     )
     private Long id;
     private String name;
-    @OneToMany(
-            mappedBy = "trip"
-    )
-    private Collection<Office> offices;
+
 }

@@ -18,9 +18,5 @@ public class Place {
     private Long id;
 
     private String placeName;
-    @OneToMany(
-            mappedBy = "places"
-    )
-    private Collection<Office> offices;
 
 }

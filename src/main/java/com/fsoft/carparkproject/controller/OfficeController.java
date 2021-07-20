@@ -3,7 +3,8 @@ package com.fsoft.carparkproject.controller;
 import com.fsoft.carparkproject.dto.OfficeDTO;
 
 import com.fsoft.carparkproject.model.Office;
-import com.fsoft.carparkproject.service.OfficeService;
+import com.fsoft.carparkproject.service.impl.OfficeServiceImpl;
+import com.fsoft.carparkproject.service.interfaces.IOfficeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,18 +14,26 @@ import java.util.List;
 @RequestMapping("office")
 public class OfficeController {
 
-    private final OfficeService officeService;
+    private final IOfficeService officeService;
     @Autowired
-    public OfficeController(OfficeService officeService) {
+    public OfficeController(IOfficeService officeService) {
         this.officeService = officeService;
     }
-    @GetMapping("/list-office")
-    public List<OfficeDTO> getAllOffice(){
+    @GetMapping("/all")
+    public List<Office> getAllOffice(){
         return officeService.getAllOffice();
     }
     @PostMapping("/insert")
     public void insertOffice(@RequestBody OfficeDTO office){
         officeService.addOffice(office);
+    }
+    @DeleteMapping(path = "/delete")
+    public void deleteOffice(@RequestParam("id") Long id){
+        officeService.deleteOffice(id);
+    }
+    @PutMapping(path = "/update")
+    public void updateOffice(@RequestParam("id") Long id, @RequestBody OfficeDTO office){
+        officeService.updateOffice(id,office);
     }
 
 }
