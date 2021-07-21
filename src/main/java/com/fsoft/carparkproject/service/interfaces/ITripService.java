@@ -1,6 +1,6 @@
 package com.fsoft.carparkproject.service.interfaces;
 
-import com.fsoft.carparkproject.model.Trip;
+import com.fsoft.carparkproject.entity.Trip;
 
 import java.util.List;
 

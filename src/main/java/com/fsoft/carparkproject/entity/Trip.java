@@ -1,22 +1,20 @@
-package com.fsoft.carparkproject.model;
+package com.fsoft.carparkproject.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.Collection;
 
 @Entity
-@Data
+@Table(name = "trip")
 @NoArgsConstructor
-@Table(name = "place")
-public class Place {
+@Data
+public class Trip {
     @Id
     @GeneratedValue(
             strategy = GenerationType.IDENTITY
     )
     private Long id;
-
-    private String placeName;
+    private String name;
 
 }

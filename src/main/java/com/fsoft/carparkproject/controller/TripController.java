@@ -1,7 +1,6 @@
 package com.fsoft.carparkproject.controller;
 
-import com.fsoft.carparkproject.model.Place;
-import com.fsoft.carparkproject.model.Trip;
+import com.fsoft.carparkproject.entity.Trip;
 import com.fsoft.carparkproject.service.interfaces.ITripService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;

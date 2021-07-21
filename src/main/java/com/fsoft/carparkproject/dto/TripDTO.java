@@ -1,6 +1,6 @@
 package com.fsoft.carparkproject.dto;
 
-import com.fsoft.carparkproject.model.Trip;
+import com.fsoft.carparkproject.entity.Trip;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

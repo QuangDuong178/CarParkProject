@@ -2,8 +2,7 @@ package com.fsoft.carparkproject.service.impl;
 
 import com.fsoft.carparkproject.dto.OfficeDTO;
 
-import com.fsoft.carparkproject.model.Office;
-import com.fsoft.carparkproject.model.Place;
+import com.fsoft.carparkproject.entity.Office;
 import com.fsoft.carparkproject.repository.OfficeRepository;
 import com.fsoft.carparkproject.repository.PlaceRepository;
 import com.fsoft.carparkproject.repository.TripRepository;
@@ -39,7 +38,6 @@ public class OfficeServiceImpl implements IOfficeService {
         Office newOffice = mapper.map(office,Office.class);
         newOffice.setPlaces(placeRepository.getById(office.getPlace_id()));
         newOffice.setTrip(tripRepository.getById(office.getTrip_id()));
-
         officeRepository.save(newOffice);
     }
     @Override

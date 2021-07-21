@@ -1,8 +1,7 @@
 package com.fsoft.carparkproject.service.impl;
 
 
-import com.fsoft.carparkproject.dto.PlaceDTO;
-import com.fsoft.carparkproject.model.Place;
+import com.fsoft.carparkproject.entity.Place;
 import com.fsoft.carparkproject.repository.PlaceRepository;
 import com.fsoft.carparkproject.service.interfaces.IPlaceService;
 import org.modelmapper.ModelMapper;

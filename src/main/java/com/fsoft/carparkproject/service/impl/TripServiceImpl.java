@@ -1,6 +1,6 @@
 package com.fsoft.carparkproject.service.impl;
 
-import com.fsoft.carparkproject.model.Trip;
+import com.fsoft.carparkproject.entity.Trip;
 import com.fsoft.carparkproject.repository.TripRepository;
 import com.fsoft.carparkproject.service.interfaces.ITripService;
 import org.modelmapper.ModelMapper;

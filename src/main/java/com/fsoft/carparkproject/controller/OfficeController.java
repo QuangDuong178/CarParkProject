@@ -2,8 +2,7 @@ package com.fsoft.carparkproject.controller;
 
 import com.fsoft.carparkproject.dto.OfficeDTO;
 
-import com.fsoft.carparkproject.model.Office;
-import com.fsoft.carparkproject.service.impl.OfficeServiceImpl;
+import com.fsoft.carparkproject.entity.Office;
 import com.fsoft.carparkproject.service.interfaces.IOfficeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

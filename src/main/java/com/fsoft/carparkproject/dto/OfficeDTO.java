@@ -1,11 +1,9 @@
 package com.fsoft.carparkproject.dto;
 
-import com.fsoft.carparkproject.model.Office;
-import com.fsoft.carparkproject.model.Place;
+import com.fsoft.carparkproject.entity.Office;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
 import java.time.LocalDate;
 @Data
 @NoArgsConstructor

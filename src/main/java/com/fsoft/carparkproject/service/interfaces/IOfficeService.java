@@ -1,7 +1,7 @@
 package com.fsoft.carparkproject.service.interfaces;
 
 import com.fsoft.carparkproject.dto.OfficeDTO;
-import com.fsoft.carparkproject.model.Office;
+import com.fsoft.carparkproject.entity.Office;
 
 import java.util.List;
 

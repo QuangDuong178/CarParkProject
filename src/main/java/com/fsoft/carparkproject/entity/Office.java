@@ -1,12 +1,10 @@
-package com.fsoft.carparkproject.model;
+package com.fsoft.carparkproject.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.Collection;
-import java.util.List;
 
 @Data
 @Entity
