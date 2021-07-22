@@ -16,7 +16,6 @@ public class Place {
             strategy = GenerationType.IDENTITY
     )
     private Long id;
-
     private String placeName;
 
 }
