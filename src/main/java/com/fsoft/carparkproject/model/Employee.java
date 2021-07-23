@@ -23,8 +23,7 @@ public class Employee {
 	private Long id;
 
 	@NotNull(message = "Name cannot be null")
-	@Size(max=50, message="Name length max 50")
-	@Pattern(regexp="^(?=.*[a-z]).{1,50}$", message="Name is invalid")
+	@Pattern(regexp="^[a-z][^0-9]{1,50}$", message="Name is invalid")
 	private String name;
 	
 	@NotNull(message = "DOB cannot be null")
@@ -40,7 +39,6 @@ public class Employee {
 	private String phone;
 	
 	@Email(message = "Email should be valid")
-	
 	private String email;
 	
 	@NotNull(message = "Account cannot be null")

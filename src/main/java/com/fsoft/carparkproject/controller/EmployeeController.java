@@ -2,6 +2,8 @@ package com.fsoft.carparkproject.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,7 +35,7 @@ public class EmployeeController {
 	        return employeeService.getAllEmployee();
 	    }
 	    @PostMapping("/insert")
-	    public void insertOffice(@RequestBody Employee employee){
+	    public void insertOffice(@RequestBody @Valid Employee employee){
 	    	employeeService.addEmployee(employee);
 	    }
 	    @DeleteMapping(path = "/delete/{id}")
